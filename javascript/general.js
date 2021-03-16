@@ -1,7 +1,7 @@
 /* Generelle Features für die Website */
 /* 1. Die Navigationsleiste für mobile Endgeräte */
 /* 2. Der to-top-Button */
-/* Nachdem die Navbar geladen wurde, kommen die Funktionen, daher steht alles in der callback-Function des .load */
+/* Nachdem die Navbar geladen wurde, kommen die Funktionen, daher steht alles in der callback-Function des .load  */
 $(document).ready(function() {
   $("#navbar").load("../components/navbar.html", () => {
     function navSlide() {
