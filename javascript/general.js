@@ -1,11 +1,9 @@
 /* Generelle Features für die Website */
 /* 1. Die Navigationsleiste für mobile Endgeräte */
 /* 2. Der to-top-Button */
-alert("Test")
 /* Nachdem die Navbar geladen wurde, kommen die Funktionen, daher steht alles in der callback-Function des .load */
 $(document).ready(function() {
   $("#navbar").load("../components/navbar.html", () => {
-    alert("geladen")
     function navSlide() {
       /* Greife auf die HTML Elemente zu */
       const burger = document.querySelector(".burger");
