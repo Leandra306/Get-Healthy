@@ -1,0 +1,9 @@
+#title {
+  background-image: url("https://www.bamf.de/SharedDocs/Bilder/DE/AktuelleMeldungen/2020/20200424-am-integration-sport-corona-1.jpg?__blob=wide&v=3");
+}
+
+.title__content {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}

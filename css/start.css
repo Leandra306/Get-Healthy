@@ -1,0 +1,55 @@
+#title {
+  height: 100vh;
+  background-image: url("../images/background-image.png");
+}
+
+#myVideo {
+  width: auto;
+  height: 100%;
+}
+
+.title__content {
+  margin: 0;
+  position: absolute;
+  top: 50vh;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  transition: 1s; /* Navigationsleiste erscheint langsamer */
+  background-color: white;
+}
+
+/* Diese Klasse hat der Header am Anfang, beim Scrollen wird der Header kleiner */
+.bigHeader {
+  padding-top: 7vh;
+  background-color: transparent; /* keinen Hintergrund */
+  border-bottom: none;
+  color: white;
+}
+
+/* Navbar Links größer machen */
+.bigHeader .nav-links a {
+  font-size: 18px;
+  color: white;
+}
+
+.logo {
+  transition: 1s;
+}
+
+.bigHeader #logo {
+  height: 10vh;
+  transition: 1s;
+}
+
+/* Ändert die Textfarbe im Logo */
+.bigHeader svg text,
+.bigHeader svg rect {
+  fill: white;
+}
+
+.bigHeader .burger div {
+  background-color: white;
+}

@@ -1,0 +1,8 @@
+#title {
+  background-image: url("https://images.pexels.com/photos/3683051/pexels-photo-3683051.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.title__content {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}

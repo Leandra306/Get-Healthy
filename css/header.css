@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Arvo", serif;
+}
+
+/*///// title /////*/
+
+#title {
+  height: 50vh; /* 50% view height, also 50% des screens */
+  background-color: #88b04b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Für die Hintergrundbilder */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  position: fixed; /* Navbar ist fest am oberen Bildrand */
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: white;
+  border-bottom: 1px solid grey; /* grauer Strich unter an der Navbar */
+  z-index: 10; /* Die Navbar erscheint über den anderen Elementen */
+}
+
+.logo {
+  /* Erzeugt einen Kasten um das Logo, damit das Laden des Logos keine Ruckler verursacht */
+  /* Das Logo hat ungefähr ein Größenverhältnis von 1:3 */
+  height: 7vh;
+  width: 21vh;
+}
+#logo {
+  height: 7vh;
+  width: auto;
+}
+
+.logo a {
+  width: 100%;
+  height: 100%;
+}
+
+/* Die Itemliste in der Navbar */
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-links li {
+  list-style: none; /* Entferne die Marker der Listenitems */
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none; /* Entferne den Unterstrich aus den Links */
+  font-size: 16px;
+  font-weight: bold; /* macht den Text fett */
+  letter-spacing: 1.5px; /* Erhöht den Abstand der Buchstaben */
+}
+
+/* Der Burger ist nicht sichtbar auf einem großen Bildschirm */
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+  transition: all 0.3s ease; /* Burger fadet ein  */
+}
+
+/* Media Query, die ein Design für andere Bildschirmgrößen festlegt */
+@media screen and (max-width: 1300px) {
+  /* unter einer Bildschirmbreite von 1300px */
+  body {
+    overflow-x: hidden; /* Man sieht nichts, was außerhalb des Bildes ist */
+  }
+
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* Ändert die Richtung der Links auf: oben nach unten */
+    align-items: center;
+    width: 100%;
+    transform: translateX(
+      100%
+    ); /* Navigationsleiste wird aus dem Bild geschoben */
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links a {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .nav-links li {
+    opacity: 0;
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer; /* Mauszeiger wird zum klickenden Finger */
+  }
+}
+
+.nav-active {
+  transform: translateX(
+    0%
+  ); /* Diese Klasse bekommt die Navbar durch Klick auf den Burger (durch Javascript-Funktion) */
+  /* Navbar wird ins Bild geschoben, sodass man sie sieht */
+}
+
+/* Lässt die Navebaritems einfliegen */
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Burger animation */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Schrift in der Mitte des Headers */
+
+.title__content {
+  margin-top: 25vh; /* Text ist in der Mitte des Bildschirms, da Header Größe von 50vh */
+  text-align: center;
+}
+
+.title__content h1 {
+  font-size: 4rem;
+  user-select: none; /* man kann mit der Maus den Text nicht mehr einfangen */
+}
+
+.title__content p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  letter-spacing: 1.3px;
+  user-select: none;
+}
+
+@media screen and (max-width: 600px) {
+  .title__content h1 {
+    font-size: 3rem;
+  }
+}

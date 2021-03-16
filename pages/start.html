@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get healthy - Start</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/section.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/start.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/466f1d18a5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Chart -->
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+
+    <!--  JQuery  -->
+    <!-- Fügt die Navbav ein, dies geschieht in index.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header id="title">
+      <nav id="navbar" class="bigHeader"></nav>
+      <!-- Navbar, die in Javascriptfile eingefügt wird -->
+      <video autoplay muted loop id="myVideo">
+        <source src="../images/video_fullHD.mp4" type="video/mp4" />
+      </video>
+      <div class="title__content">
+        <h1>Get healthy</h1>
+        <p>Mit UNS zum glücklichen Leben!</p>
+      </div>
+    </header>
+
+    <section class="whiteSection textSection">
+      <div class="section__container">
+        <h2 class="section__heading">Was bedeutet Gesundheit?</h2>
+        <div class="section__row">
+          <div class="section__column">
+            <p>
+              Die meisten merken erst, wie wichtig Gesundheit ist, wenn sie
+              krank sind. Doch Gesundheit ist mehr als die Abwesenheit von
+              Krankheit. Die Weltgesundheitsorganisation definiert Gesundheit
+              als „Zustand vollkommenen körperlichen, mentalen und sozialen
+              Wohlbefindens“.
+            </p>
+            <p>
+              Sie ist das Wichtigste, das wir haben und darum sollten wir uns
+              stets um unser Wohlbefinden auf allen genannten Ebenen kümmern.
+              Dabei ist es von Mensch zu Mensch unterschiedlich, wann wir uns
+              gesund oder krank fühlen.
+            </p>
+            <p>
+              Damit Sie sich um Ihre Gesundheit kümmern können, ist es wichtig
+              zu wissen, was überhaupt Einfluss auf Ihre Gesundheit hat, denn da
+              gibt es viele verschiedene Faktoren. Manche von ihnen können wir
+              beeinflussen, andere wiederum nicht.
+            </p>
+            <p>
+              Im Folgenden habe ich mehrere Faktoren zusammengestellt, die die
+              Gesundheit langfristig gesehen fördern und mit denen präventiv
+              Krankheiten vorgebeugt werden können:
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section1" class="coloredSection imageSection">
+      <div class="section__row">
+        <div class="section__column">
+          <a href="../pages/ernaehrung.html">
+            <img
+              src="../images/ernährung/lebensmittelvielfalt.jpg"
+              alt="Lebensmittelvielfalt-img"
+            />
+
+            <h3>Ernährung</h3>
+          </a>
+        </div>
+        <div class="section__column">
+          <a href="../pages/sport.html"
+            ><img
+              src="../images/sport/startbildsport.jpg"
+              alt="sport-img"
+            />
+
+            <h3>Sport</h3>
+          </a>
+        </div>
+        <div class="section__column">
+          <a href="../pages/schlaf.html"
+            ><img
+              src="../images/schlaf/startbild1.jpeg"
+              alt="schlaf-img"
+            />
+
+            <h3>Schlaf</h3>
+          </a>
+        </div>
+
+        <div class="section__column">
+          <a href="../pages/vitamine.html"
+            ><img
+              src="../images/vitamine/startbildvitamine.jpeg"
+              alt="vitamine-img"
+            />
+
+            <h3>Vitamine</h3>
+          </a>
+        </div>
+
+        <div class="section__column">
+          <a href="../pages/sozBez.html">
+            <img
+              src="../images/sozBez/startbildsozbez.jpg"
+              alt="freunde-img"
+            />
+
+            <h3>Soziale Beziehungen</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="whiteSection">
+      <div class="section__container">
+        <h2 class="section__heading">Health index</h2>
+        <div class="section__row">
+          <p>
+            Der Health index spiegelt die Gesundheit der Weltbevölkerung wieder.
+            Deshalb ist es sehr wichtig auf seine Gesundheit zu achten.
+          </p>
+        </div>
+        <div class="section__row">
+          <div id="regions_div" style="width: 900px; height: 500px"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="coloredSection"></footer>
+
+    <script src="../javascript/start.js"></script>
+  </body>
+</html>

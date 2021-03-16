@@ -1,0 +1,147 @@
+/*///// section /////*/
+
+section {
+  width: auto;
+  padding: 7% 15%;
+  line-height: 2;
+}
+
+section li {
+  text-align: left;
+}
+
+section a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.coloredSection {
+  background-color: #88b04b;
+}
+
+.whiteSection {
+  background-color: white;
+}
+
+.section__container {
+  text-align: center;
+}
+
+.section__heading {
+  margin-bottom: 40px;
+}
+
+.section__row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.section__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section__column img {
+  border-radius: 100%; /* Bild wird rund */
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* Bild wird nicht verzerrt */
+}
+
+/* image section */
+/* Section mit vielen runden Bildern */
+
+.imageSection .section__column {
+  width: 33%;
+  margin-bottom: 30px;
+}
+
+.imageSection a {
+  color: black;
+  text-decoration: none;
+}
+
+.imageSection a:hover {
+  opacity: 50%;
+  color: grey;
+}
+
+/* Bei dunklem Hintergrund ändert sich die Schrift beim Hovern in weiß, damit man es besser sieht */
+.coloredSection.imageSection a:hover {
+  opacity: 70%;
+  color: white;
+}
+
+/* Text section */
+/* Section nur mit Text */
+
+.textSection p {
+  text-align: justify; /* Setzte den Text in Blocksatz*/
+}
+
+.textSection .section__column {
+  max-width: 70%;
+}
+
+/* image Text section */
+
+.imageTextSection .section__column {
+  max-width: 60%;
+}
+
+.imageTextSection p {
+  text-align: justify;
+}
+
+/* Media Query für kleinere Displays */
+/* Setzte Abstände zwischen Bild/Text und reduziere die Seitenabstände */
+@media screen and (max-width: 1450px) {
+  section {
+    width: auto;
+    padding: 7% 7%; /* Abstand an den Seiten kleiner machen */
+    line-height: 1.5;
+  }
+
+  .section__heading {
+    margin: 40px 0;
+  }
+
+  .imageTextSection .section__column img {
+    margin: 40px 0;
+  }
+
+  .imageTextSection .section__column,
+  .textSection .section__column {
+    max-width: 100%;
+  }
+
+  .imageTextSection.coloredSection img {
+    margin-top: 0;
+  }
+
+  .imageSection .section__column {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  /* Mache Bilder kleiner */
+  img,
+  iframe {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+/* Damit die Bilder von drei in einer Reihe über zwei zu einem Bild gehen mit sinkender Displaygröße */
+@media screen and (max-width: 630px) {
+  .imageSection .section__column {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}

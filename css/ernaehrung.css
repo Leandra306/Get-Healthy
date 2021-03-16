@@ -1,0 +1,9 @@
+#title {
+  background-image: url("https://www.prinz-sportlich.de/wp-content/uploads/2018/01/Gesunde_Ern%C3%A4hrung_Lebensmittelvielfalt_shutterstock_604520291-1500x710.jpg");
+}
+
+.title__content h1 {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}

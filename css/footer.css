@@ -1,0 +1,86 @@
+/*/ //// footer /////*/
+
+footer {
+  padding: 7% 15%;
+}
+
+.footer__row {
+  display: flex;
+  flex-wrap: wrap; /* Die einzelnen Spalten gehen bei kleineren Bildschirmen in eine neue Zeile über */
+  justify-content: space-evenly;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__copyright {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer__copyright i {
+  margin: 0px 10px 30px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 20px 15px 10px;
+}
+
+/* // Button, der zurück zum Anfang der Seite führt // */
+
+#toTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 30px; /* Place the button at the bottom of the page */
+  right: 60px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #f44336; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 25px; /* Increase font size */
+}
+
+#toTopBtn::after {
+  /* Pfeil einfügen */
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 40px;
+  color: #fff;
+}
+#toTopBtn:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#toTopBtn:active {
+  background-color: #555;
+}
+#toTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Auf dem Mobilen Endgerät wird der Button kleiner */
+@media screen and (max-width: 700px) {
+  #toTopBtn {
+    bottom: 10px;
+    right: 10px;
+    font-size: 13px;
+  }
+
+  #toTopBtn::after {
+    line-height: 20px;
+  }
+}
